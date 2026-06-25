@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Freddie Run</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="telaInicial">
+    <h1>Freddie Run</h1>
+    <p>Use as setas para fugir!</p>
+    <button onclick="iniciarJogo()">Jogar</button>
+  </div>
+
+  <div id="jogo" class="hidden">
+    <div id="placar">Pontos: 0</div>
+
+    <div id="pista">
+      <img id="fundo" src="img/fundo.png">
+
+      <img id="inimigo" src="img/michael.png">
+      <img id="player" src="img/freddie.png">
+    </div>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    <h1>Game Over</h1>
+    <p id="pontuacaoFinal"></p>
+    <button onclick="reiniciarJogo()">Jogar novamente</button>
+  </div>
+
+  <audio id="somMichael" src="musica/michael-grito.mp3"></audio>
+  <audio id="somGameOver" src="musica/gameover.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
